@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
             String password2 = password.getText().toString();
 
 
-            //Intent intent = new Intent(this, MainScreenActivity.class);
+            Intent intent = new Intent(this, MainScreenActivity.class);
             //intent.putExtra("Username", username.getText().toString());
             //startActivity(intent);
         }
