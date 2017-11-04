@@ -28,7 +28,7 @@ public class MainScreenActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
         //initialize views
-        amount = (EditText) findViewById(R.id.amount);
+        //amount = (EditText) findViewById(R.id.amount);
 
         progressDialog = new ProgressDialog(this);
         //SharedPreferences mPrefs = getSharedPreferences("WaterCrowdSource", MODE_PRIVATE);
