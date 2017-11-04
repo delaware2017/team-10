@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Controller.QRActivity"
-    android:background="#FFF8E1">
+    android:background="#FFFFFF">
 <!--
     <EditText
         android:layout_width="fill_parent"
