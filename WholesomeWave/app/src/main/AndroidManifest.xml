@@ -23,7 +23,7 @@
 
         <activity android:name=".Controller.LoginActivity"/>
         <activity android:name=".Controller.DoctorQRreader"/>
-        <activity android:name=".Controller.MainScreenActivity">
+        <activity android:name=".Controller.MainScreenActivity"/>
         <activity android:name=".Controller.QRActivity">
         </activity>
 

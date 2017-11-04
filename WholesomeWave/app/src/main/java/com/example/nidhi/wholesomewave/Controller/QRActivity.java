@@ -31,11 +31,11 @@ public class QRActivity extends AppCompatActivity {
         imageView = (ImageView)findViewById(R.id.imageView);
         editText = (EditText)findViewById(R.id.editText);
         button = (Button)findViewById(R.id.button);
-        EditTextValue = "5943cac677d06e6b3071bcbeaf567084"; //editText.getText().toString();
-        bitmap = TextToImageEncode(EditTextValue);
-        imageView.setImageBitmap(bitmap);
+        //EditTextValue = "5943cac677d06e6b3071bcbeaf567084"; //editText.getText().toString();
+        //bitmap = TextToImageEncode(EditTextValue);
+        //imageView.setImageBitmap(bitmap);
 
-        /*
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +53,7 @@ public class QRActivity extends AppCompatActivity {
                 }
 
             }
-        });*/
+        });
     }
 
 
