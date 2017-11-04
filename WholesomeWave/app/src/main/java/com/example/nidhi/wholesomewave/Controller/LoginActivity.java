@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     public void changeActivity(){
-        Intent intent = new Intent(this, DoctorQRreader.class);
+        Intent intent = new Intent(this, DoctorScreenActivity.class);
         startActivity(intent);
 
         }

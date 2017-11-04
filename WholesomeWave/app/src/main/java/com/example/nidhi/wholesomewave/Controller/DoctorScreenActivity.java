@@ -26,22 +26,22 @@ public class DoctorScreenActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_activity);
+        setContentView(R.layout.doctor_screen_layout);
         //initialize views
         //amount = (EditText) findViewById(R.id.amount);
 
         progressDialog = new ProgressDialog(this);
         //SharedPreferences mPrefs = getSharedPreferences("WaterCrowdSource", MODE_PRIVATE);
-
+/*
         Button submit = (Button) findViewById(R.id.submitButton);
         submit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 changeActivity();
             }
-        });
+        });*/
     }
-
+/*
     public void changeActivity(){
         Intent intent = new Intent(this, GenerateCoupon.class);
         startActivity(intent);
@@ -55,7 +55,7 @@ public class DoctorScreenActivity extends AppCompatActivity{
         //intent.putExtra("Username", username.getText().toString());
         startActivity(intent);
     }
-
+*/
 
 
 
