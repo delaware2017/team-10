@@ -22,6 +22,7 @@ public class DoctorScreenActivity extends AppCompatActivity{
     //private EditText password;
     private ProgressDialog progressDialog;
     private static final String TAG = "AmountActivity";
+    private Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,18 @@ public class DoctorScreenActivity extends AppCompatActivity{
 
         progressDialog = new ProgressDialog(this);
         //SharedPreferences mPrefs = getSharedPreferences("WaterCrowdSource", MODE_PRIVATE);
+
+
+        back = (Button) findViewById(R.id.button4);
+        back.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){backActivity();
+            }
+        });
+
+
+
+
 /*
         Button submit = (Button) findViewById(R.id.submitButton);
         submit.setOnClickListener(new View.OnClickListener(){
@@ -45,8 +58,14 @@ public class DoctorScreenActivity extends AppCompatActivity{
     public void changeActivity(){
         Intent intent = new Intent(this, GenerateCoupon.class);
         startActivity(intent);
-    }
+    }*/
 
+    public void backActivity(){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+
+        }
+/*
     public void onQR(View v) {
 
         //String password2 = password.getText().toString();
