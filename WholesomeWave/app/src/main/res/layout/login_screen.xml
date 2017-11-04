@@ -50,21 +50,20 @@
         android:gravity="center_horizontal">
 
         <Button
-            android:text="Cancel"
+            android:text="Doctor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onCancelPressed"
+            android:id="@+id/loginDoctor"
             android:paddingTop="10dp"
             android:elevation="0dp"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_marginRight="20dp" />
     <Button
-        android:text="Login"
+        android:text="Participant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/loginButton"
         style="?android:attr/buttonBarButtonStyle"
-        android:onClick="onLoginPressed"
+        android:id="@+id/loginParticipant"
         android:elevation="24dp"
         android:layout_marginLeft="20dp" />
 

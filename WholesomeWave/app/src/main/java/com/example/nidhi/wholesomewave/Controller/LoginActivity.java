@@ -1,6 +1,7 @@
 package com.example.nidhi.wholesomewave.Controller;
 
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
 import android.widget.EditText;
 import android.app.ProgressDialog;
 
@@ -30,6 +31,9 @@ public class LoginActivity extends AppCompatActivity {
     private EditText username;
     private EditText password;
     private ProgressDialog progressDialog;
+    private Button loginDoctor;
+    private Button loginParticipant;
+
     private static final String TAG = "LoginActivity";
 
     @Override
@@ -42,20 +46,17 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         //SharedPreferences mPrefs = getSharedPreferences("WaterCrowdSource", MODE_PRIVATE);
 
+        loginDoctor = (Button) findViewById(R.id.loginDoctor);
+        loginDoctor.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                System.out.println("HI");
+            }
+        });
 
     }
 
-    public void onLoginPressed(View v) {
 
-
-            String username2 = username.getText().toString();
-            String password2 = password.getText().toString();
-
-
-            Intent intent = new Intent(this, MainScreenActivity.class);
-            //intent.putExtra("Username", username.getText().toString());
-            //startActivity(intent);
-        }
 
     public void onCancelPressed(View v) {
         finish();
