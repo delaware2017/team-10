@@ -6,8 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@drawable/barcode"
     tools:context="com.example.nidhi.wholesomewave.Controller.GenerateCoupon">
 
+    <!--
     <TextView
         android:id="@+id/Coupon"
         style="?android:attr/buttonBarButtonStyle"
@@ -15,4 +17,6 @@
         android:layout_height="wrap_content"
         android:elevation="24dp"
         android:text="QR Code"/>
+
+    -->
 </LinearLayout>
