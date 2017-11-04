@@ -1,75 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.nidhi.wholesomewave.Controller.LoginActivity"
-    android:gravity="center_vertical"
-    android:paddingLeft="16dp">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email" />
-
-        <EditText
-            android:id="@+id/userNameText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="20dp">
-        <TextView
-            android:text="Password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/passwordText" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
-
-        <Button
-            android:text="Doctor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/loginDoctor"
-            android:paddingTop="10dp"
-            android:elevation="0dp"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_marginRight="20dp" />
-    <Button
-        android:text="Participant"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="?android:attr/buttonBarButtonStyle"
-        android:id="@+id/loginParticipant"
-        android:elevation="24dp"
-        android:layout_marginLeft="20dp" />
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="192dp"
+        android:text="Email"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/emailText"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Password"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pWordText"
+        app:layout_constraintEnd_toStartOf="@+id/pWordText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <EditText
+        android:id="@+id/pWordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
 
+    <Button
+        android:id="@+id/usrBtn"
+        android:layout_width="wrap_content"
 
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:text="Doctor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/docBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/docBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="User"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/usrBtn"
+        app:layout_constraintTop_toBottomOf="@+id/pWordText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

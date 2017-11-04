@@ -41,12 +41,12 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_screen);
         //initialize views
-        username = (EditText) findViewById(R.id.userNameText);
-        password = (EditText) findViewById(R.id.passwordText);
+        username = (EditText) findViewById(R.id.emailText);
+        password = (EditText) findViewById(R.id.pWordText);
         progressDialog = new ProgressDialog(this);
         //SharedPreferences mPrefs = getSharedPreferences("WaterCrowdSource", MODE_PRIVATE);
 
-        loginParticipant = (Button) findViewById(R.id.loginParticipant);
+        loginParticipant = (Button) findViewById(R.id.docBtn);
         loginParticipant.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -55,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
-        loginDoctor = (Button) findViewById(R.id.loginDoctor);
+        loginDoctor = (Button) findViewById(R.id.usrBtn);
         loginDoctor.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
