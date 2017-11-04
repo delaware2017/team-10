@@ -116,28 +116,7 @@
             android:layout_marginLeft="20dp" />
 
 
-    </LinearLayout>
-    <TableRow>
-        <!--
-        <Button
-            android:id="@+id/QRButton"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:elevation="24dp"
-            android:onClick="onQR"
-            android:text="QR Code"/>
-            -->
-    </TableRow>
-
-
-
-
-
-
-
-
     </TableLayout>
+
 
 
