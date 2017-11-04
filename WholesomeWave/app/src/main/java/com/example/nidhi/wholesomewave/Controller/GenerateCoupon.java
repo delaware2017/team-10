@@ -16,8 +16,8 @@ public class GenerateCoupon extends AppCompatActivity {
         setContentView(R.layout.activity_generate_coupon);
         String randomKey = getSaltString();
 
-        TextView mTextView = (TextView) findViewById(R.id.Coupon);
-        mTextView.setText(randomKey);
+        //TextView mTextView = (TextView) findViewById(R.id.Coupon);
+        //mTextView.setText(randomKey);
 
     }
 
