@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
         loginDoctor.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                System.out.println("HI");
+                //go to qr reading page
             }
         });
 
