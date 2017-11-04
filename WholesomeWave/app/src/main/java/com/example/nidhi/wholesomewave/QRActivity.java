@@ -12,6 +12,7 @@ import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
+import com.example.nidhi.wholesomewave.R;
 
 public class QRActivity extends AppCompatActivity {
 
@@ -25,7 +26,7 @@ public class QRActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_qr);
 
         imageView = (ImageView)findViewById(R.id.imageView);
         editText = (EditText)findViewById(R.id.editText);
@@ -76,7 +77,7 @@ public class QRActivity extends AppCompatActivity {
             for (int x = 0; x < bitMatrixWidth; x++) {
 
                 pixels[offset + x] = bitMatrix.get(x, y) ?
-                        getResources().getColor(R.color.QRCodeBlackColor):getResources().getColor(R.color.QRCodeWhiteColor);
+                        getResources().getColor(R.color.colorPrimary):getResources().getColor(R.color.colorPrimary);
             }
         }
         Bitmap bitmap = Bitmap.createBitmap(bitMatrixWidth, bitMatrixHeight, Bitmap.Config.ARGB_4444);
