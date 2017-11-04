@@ -7,4 +7,24 @@
     android:layout_height="match_parent"
     tools:context="com.example.nidhi.wholesomewave.Controller.DoctorQRreader">
 
+        <TextView
+            android:id="@+id/result_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="no barcode captured"
+            android:textSize="22sp"
+            android:freezesText="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <Button
+            android:id="@+id/scan_barcode_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="scan barcode"
+            android:layout_below="@id/result_textview"
+            android:background="@color/colorAccent"
+        />
+
 </android.support.constraint.ConstraintLayout>
