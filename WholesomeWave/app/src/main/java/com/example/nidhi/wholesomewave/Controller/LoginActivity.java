@@ -50,16 +50,16 @@ public class LoginActivity extends AppCompatActivity {
         loginDoctor.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //go to qr reading page
+                changeActivity();
             }
         });
-
     }
 
 
 
-    public void onCancelPressed(View v) {
-        finish();
+    public void changeActivity(){
+        Intent intent = new Intent(this, DoctorQRreader.class);
+        startActivity(intent);
     }
 
     protected void onStop() {
