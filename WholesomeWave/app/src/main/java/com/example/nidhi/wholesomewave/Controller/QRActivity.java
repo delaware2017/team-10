@@ -31,6 +31,11 @@ public class QRActivity extends AppCompatActivity {
         imageView = (ImageView)findViewById(R.id.imageView);
         editText = (EditText)findViewById(R.id.editText);
         button = (Button)findViewById(R.id.button);
+        EditTextValue = "5943cac677d06e6b3071bcbeaf567084"; //editText.getText().toString();
+        bitmap = TextToImageEncode(EditTextValue);
+        imageView.setImageBitmap(bitmap);
+
+        /*
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +53,7 @@ public class QRActivity extends AppCompatActivity {
                 }
 
             }
-        });
+        });*/
     }
 
 
@@ -77,7 +82,7 @@ public class QRActivity extends AppCompatActivity {
             for (int x = 0; x < bitMatrixWidth; x++) {
 
                 pixels[offset + x] = bitMatrix.get(x, y) ?
-                        getResources().getColor(R.color.colorPrimary):getResources().getColor(R.color.colorPrimary);
+                        getResources().getColor(R.color.black):getResources().getColor(R.color.white);
             }
         }
         Bitmap bitmap = Bitmap.createBitmap(bitMatrixWidth, bitMatrixHeight, Bitmap.Config.ARGB_4444);
