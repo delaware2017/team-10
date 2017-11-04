@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import com.example.nidhi.wholesomewave.Controller.QRActivity;
 
@@ -31,6 +32,19 @@ public class MainScreenActivity extends AppCompatActivity{
 
         progressDialog = new ProgressDialog(this);
         //SharedPreferences mPrefs = getSharedPreferences("WaterCrowdSource", MODE_PRIVATE);
+
+        Button submit = (Button) findViewById(R.id.submitButton);
+        submit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                changeActivity();
+            }
+        });
+    }
+
+    public void changeActivity(){
+        Intent intent = new Intent(this, GenerateCoupon.class);
+        startActivity(intent);
     }
 
     public void onQR(View v) {

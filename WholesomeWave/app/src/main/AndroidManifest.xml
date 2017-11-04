@@ -23,15 +23,13 @@
         <activity android:name=".Controller.MainActivity"/>
         <activity android:name=".Controller.afterwel"/>
         <activity android:name=".Controller.welcome"/>
-
         <activity android:name=".Controller.LoginActivity"/>
         <activity android:name=".Controller.DoctorQRreader"/>
         <activity android:name=".Controller.MainScreenActivity"/>
         <activity android:name=".Controller.QRActivity">
         </activity>
-
-
-
+        <activity android:name=".Controller.GenerateCoupon">
+        </activity>
     </application>
 
 </manifest>
