@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.android_examples.generateqrcode_android_examplescom.QRActivity"
+    tools:context=".Controller.QRActivity"
     android:background="#FFF8E1">
 
     <EditText

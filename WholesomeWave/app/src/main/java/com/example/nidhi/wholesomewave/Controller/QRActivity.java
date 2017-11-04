@@ -1,4 +1,4 @@
-package com.android_examples.generateqrcode_android_examplescom;
+package com.example.nidhi.wholesomewave.Controller;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -26,8 +26,8 @@ public class QRActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qr);
 
+        setContentView(R.layout.activity_qr);
         imageView = (ImageView)findViewById(R.id.imageView);
         editText = (EditText)findViewById(R.id.editText);
         button = (Button)findViewById(R.id.button);

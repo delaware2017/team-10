@@ -57,9 +57,20 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
+<<<<<<< Updated upstream
     public void changeActivity(){
         Intent intent = new Intent(this, DoctorQRreader.class);
         startActivity(intent);
+=======
+
+            Intent intent = new Intent(this, MainScreenActivity.class);
+            //intent.putExtra("Username", username.getText().toString());
+            startActivity(intent);
+        }
+
+    public void onCancelPressed(View v) {
+        finish();
+>>>>>>> Stashed changes
     }
 
     protected void onStop() {

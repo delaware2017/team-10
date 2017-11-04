@@ -60,8 +60,6 @@
                 android:layout_weight="1"
                 android:text="150"
                  />
-
-
         </TableRow>
 
     <LinearLayout
@@ -70,26 +68,66 @@
         android:orientation="horizontal"
         android:gravity="center_horizontal">
 
-        <Button
-            android:text="5$ Actiivity"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onCancelPressed"
-            android:paddingTop="10dp"
-            android:elevation="0dp"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_marginRight="20dp" />
-        <Button
-            android:text="10$ Activity"
+            android:layout_weight="0.11"
+            android:text="How much do you want to spend?"
+            android:ems="10"/>
+
+    </LinearLayout>
+
+
+    <TableRow>
+
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/loginButton"
+            android:ems="10"
+            android:id="@+id/amount" />
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:text="How much do you want to spend?"
+            android:ems="10"/>
+
+        <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitButton"
             style="?android:attr/buttonBarButtonStyle"
-            android:onClick="onLoginPressed"
+            android:onClick="onSubmit"
             android:elevation="24dp"
             android:layout_marginLeft="20dp" />
 
+
     </LinearLayout>
+    <TableRow>
+
+        <Button
+            android:text="QR Code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/QRButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="onQR"
+            android:elevation="24dp"
+            android:layout_marginLeft="20dp" />
+    </TableRow>
+
+
+
+
 
 
 
