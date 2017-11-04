@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Number of Members" />
+                android:text="Number of Family Members " />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -51,57 +51,62 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.11"
-                android:text="Total Balance"
+                android:text="Total Voucher Balance"
                 android:ems="10"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="150"
+                android:text="$150.00"
                  />
         </TableRow>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center_horizontal">
 
         <TextView
+            android:paddingTop="30px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.11"
-            android:text="How much do you want to spend?"
+            android:paddingBottom="30px"
+
+            android:text="Grocery List: \n 4 apples, $1.00 each \t
+ 3 bananas, $2.00 each \n 2 pineapples, $5.00 \n 1 Christmas tree, $50.00"
             android:ems="10"/>
 
     </LinearLayout>
 
-
-    <TableRow>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:id="@+id/amount" />
-    </TableRow>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.11"
-            android:text="How much do you want to spend?"
+            android:text="How much of your voucher balance would you want to spend?  $12.00"
+
             android:ems="10"/>
 
-        <Button
-            android:text="Submit"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:text="Remaining voucher balance: $138.00"
+        android:ems="100"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:text="Total Bill: $58.00"
+        android:paddingTop="50px"
+        android:ems="100"/>
+
+
+    <Button
+            android:text="Receive Voucher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/submitButton"
@@ -113,16 +118,17 @@
 
     </LinearLayout>
     <TableRow>
-
+        <!--
         <Button
-            android:text="QR Code"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/QRButton"
             style="?android:attr/buttonBarButtonStyle"
-            android:onClick="onQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:elevation="24dp"
-            android:layout_marginLeft="20dp" />
+            android:onClick="onQR"
+            android:text="QR Code"/>
+            -->
     </TableRow>
 
 
