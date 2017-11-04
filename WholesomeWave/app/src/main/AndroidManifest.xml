@@ -23,9 +23,8 @@
 
         <activity android:name=".Controller.LoginActivity"/>
         <activity android:name=".Controller.DoctorQRreader"/>
-        <activity android:name=".Controller.MainScreenActivity">
-        </activity>
-
+        <activity android:name=".Controller.MainScreenActivity" />
+        <activity android:name=".Controller.barcode.BarcodeCaptureActivity"/>
 
 
     </application>
