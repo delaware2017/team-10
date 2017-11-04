@@ -19,7 +19,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.nidhi.wholesomewave.Model.User;
-
+import com.example.nidhi.wholesomewave.Controller.MainScreenActivity;
 import com.example.nidhi.wholesomewave.R;
 
 /**
@@ -46,6 +46,15 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         //SharedPreferences mPrefs = getSharedPreferences("WaterCrowdSource", MODE_PRIVATE);
 
+        loginParticipant = (Button) findViewById(R.id.loginParticipant);
+        loginParticipant.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                customerActivity();
+            }
+        });
+
+
         loginDoctor = (Button) findViewById(R.id.loginDoctor);
         loginDoctor.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -55,22 +64,24 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    public void customerActivity () {
+
+        Intent intent = new Intent(this, MainScreenActivity.class);
+        //intent.putExtra("Username", username.getText().toString());
+        startActivity(intent);
+
+    }
 
 
-<<<<<<< Updated upstream
     public void changeActivity(){
         Intent intent = new Intent(this, DoctorQRreader.class);
         startActivity(intent);
-=======
 
-            Intent intent = new Intent(this, MainScreenActivity.class);
-            //intent.putExtra("Username", username.getText().toString());
-            startActivity(intent);
         }
 
     public void onCancelPressed(View v) {
         finish();
->>>>>>> Stashed changes
+
     }
 
     protected void onStop() {
